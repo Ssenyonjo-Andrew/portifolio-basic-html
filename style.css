@@ -1,0 +1,413 @@
+html{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+    background-color: #000000;
+    
+}
+header{
+    position: fixed;
+    display: flex;
+    justify-items: space-between;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: rgb(11, 8, 15);
+}
+.logo h1{
+    font-size: 30px;
+    font-weight: 600;
+    color: aliceblue;
+    padding-left: 20px;
+}
+nav{
+    text-decoration: none;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-left: 600px;
+    padding: 0 0px;
+    border-radius: 20px;
+    
+}
+.nav ul{
+    display: flex;
+    justify-content:space-between;
+}
+nav  a{
+    display: grid;
+    padding-inline: 30px;
+    justify-content: space-between;
+    text-decoration: none;
+    color: rgb(251, 250, 250);
+    font-size:40px;
+    border-radius: 10px;
+    padding-top: 10px;
+    font-weight: 800;
+    transition: .25s;
+}
+
+nav a:hover{
+    transform: scale(1.1);
+}
+nav a:hover::after{
+    scale:1 1;
+}
+h1{
+    font-family:Britannic;
+    transition: .4s;
+    cursor: pointer;
+    font-size: 50px;
+    font-weight: 700;
+    transition: .5s;
+}
+h1:hover{
+    transform: scale(1);
+    color: white;
+}
+#home{
+    height: 70vh;
+    display: flex;
+    padding-top: 7px;
+    margin: 0;
+    padding: 0;
+    
+}
+.grid-container{
+    position: fixed;
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap:60px
+}
+.home-image img{
+    border-radius: 100px;
+    flex-basis: 100%;
+    height: 50vh;
+    width: 50vh;
+    transition: .4s;
+    margin-left: 20px;
+    opacity: .4;
+}
+.more nav{
+    margin-left: 0;
+    margin-top: 40px;
+   
+}
+.more nav a{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: linear-gradient(to right,#1a1a1a,#000000,#1a1a1a);
+    border-radius: 30px;
+}
+.home-image img:hover{
+    transform: scale(1.1);
+}
+.home-image p{
+    color: aliceblue;
+}
+.home-content h1{
+    color:rgb(186, 191, 194);
+    font-size: 70px;
+    font-weight: 800;
+}
+.home-content p{
+    font-family: Britannic;
+    color: aliceblue;
+    font-size: 40px;
+    padding-left: 50px;
+    padding-top: 0px;
+}
+.me{
+    font-family: 'Bernard MT Condensed';
+    background:linear-gradient(to right,#1a1a1a,#333333,#000000);
+    padding-top: 1px;
+    padding-bottom:1px ;
+    padding-left: 60px;
+    border-radius:40px ;
+    margin-left: 100px;
+    padding-right: 30px;
+    margin-right: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: .4s;
+    animation: bounceOutDown 30s;
+    
+}
+.me p{
+    font-family: Bernard MT Condensed;
+}
+.me:hover{
+    transform: scale(1.1);
+    background: linear-gradient(to right,#000000,#1a1a1a,#000000);
+}
+span{
+    color:#f9f9f9;
+}
+#Education{
+   padding-top: 0px;
+   height: 100vh;
+   margin: 0;
+   
+}
+.boms{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 150px;   
+    text-align: center;
+    border-radius: 30px;
+}
+.bom {
+    color: #f9f9f9;
+    border-radius: 20px;
+}
+.bom{
+    background: linear-gradient(to right,#1a1a1a,#000000,#1a1a1a);
+    transition: .3s;
+}
+.bom:hover{
+    transform: scale(1.1);
+    background: linear-gradient(to right,#000000,#1a1a1a);
+}
+.boms h4{
+    font-size:30px;
+}
+small{
+    font-size: 25px;
+    padding-left:0%;
+}
+.Academics h1{
+    color: aliceblue;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+.gallery{
+    margin-left: 80px;
+    margin-right: 0px;
+    display: flex;
+    height: 300px;
+    width: 90%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.card1{
+    background-image:url(images/digital-marketing-1433427_1920.jpg) ;
+
+}
+.card2{
+    background-image:url(images/stock-1863880_1920.jpg);
+}
+.card3{
+    background-image: url(images/machine-learning-4129175_1920.jpg);
+
+}
+.card4{
+    background-image:url(images/artificial-intelligence-8743259_1920.jpg);
+    
+}
+.card5{
+    background-image:url(images/web-1668927_1920.jpg) ;
+   
+}
+.card6{
+    background-image:url(images/big-3520096_1920.jpg) ;
+    
+}
+.card7{
+    background-image:url(images/ai-generated-8702466_1280.jpg) ;
+}
+.card8{
+    background-image: url(images/electric-4198293_1920.jpg);
+}
+.card9{
+    background-image: url(images/network-1572617_1920.jpg);
+}
+.card10{
+    background-image:url(images/network-cable-499792_1920.jpg) ;
+}    
+.card{
+    flex: 1;
+    height: 100%;
+    transition: flex 0.5s ease;
+    cursor: pointer;
+    border-radius: 30px;
+    border-radius: 20px;
+    background-position:center;
+    background-size: cover;
+}
+.card:hover{
+    flex: 10;
+}
+h2{
+    color: aliceblue;
+    text-align: center;
+}
+
+#skills{
+    background-image: url(images/eye-7318830_1920.png);
+    background-position:cover;
+    background-repeat: no-repeat;
+    margin-left: -10px;
+    margin-bottom: -20px;
+    margin-right: 0px;
+    margin-top: -60px;
+}
+#skills h1{
+    padding-top: 60px;
+    color: aliceblue;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    transition: .4s;
+}
+.skills-content{
+    padding-top: 30px;
+    display: flex;
+    grid-template-columns: repeat(auto fill, minmax(200px,1fr));
+    gap: 30px;
+    flex-basis: 100%;
+}
+.skills-content-P{
+    color: aliceblue;
+    background:linear-gradient(to right,#000000,#333333,#000000);
+    width: 700px;
+    height: 300px;
+    padding-top: 0;
+    flex-basis: 50%;
+    margin-left: 150px;
+    border-radius: 30px;
+    font-size: 25px;
+    font-weight: 700;
+    transition: .4s;
+}
+.skills-content-P:hover{
+    transform: scale(1.1);
+}
+.skills-content-H{
+    background:linear-gradient(to right,#000000,#333333,#000000);
+    flex-basis: 50%;
+    width: 700px;
+    height: 300px;
+    margin-left: 500px;
+    margin-bottom: 0px;
+    border-radius: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    animation: bounceInDown 5s;
+    transition: .4s;
+}
+.skills-content-H:hover {
+    transform: scale(1.1);
+    background:linear-gradient(to right,#333333,#000000,#333333);
+
+}
+@keyframes bounceInDown{
+    from,60%,75%,90%,to {
+        animation-timing-function: cubic-bezier(0.215,0.61,0.355,1);
+    }
+    0%{
+        opacity: 0; transform: translate3d(0,-3000px,0)scaleY(3);
+    }
+    60%{
+         transform: translate3d(0,25px,0)scaleY(.9);
+    }
+    75%{
+        transform: translate3d(0,-10px,0)scaleY(.95);  
+    }
+    90%{
+        transform: translate3d(0,5px,0)scaleY(.985);
+    }
+    to{
+        transform: translate3d(0,0,0);
+    }
+}
+.skills-content-H p{
+cursor: pointer;
+color: white;
+font-size: 25px;
+align-items: center;
+padding-left: 10px;
+padding-right: 10px;
+}
+.skills-content-P p{
+cursor: pointer;
+color: white;
+font-size: 25px;
+align-items: center;
+padding-left: 20px;
+padding-right: 10px;
+}
+h2{
+    padding-top: 0px;
+    font-size: 30px;
+    font-weight: 800;
+}
+#footer{
+    background-color:blac;
+    color: #f9f9f9;
+    width: 100%;
+    height: 10vh;
+    
+}
+.booms {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 40px;
+    margin:0px;
+    text-align: center;}
+.boom{
+    padding-left: px;
+} 
+h4{
+    font-size: 20px;
+    color: #f9f9f9;
+    margin-left: 0px;
+}
+.booms ul {
+    padding-left: 1px;
+}  
+.boom ul li{
+    font-size:20px;
+    color: #f9f9f9;
+}
+.social-icons{
+    display: flex;
+    gap: 10px;
+}
+.icon{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.icon:hover{
+    transform: scale(1.1);
+}
+.icon img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.boom nav a{
+    color: blue;
+    transition: .2s;
+    border-radius: 20%;
+}
+.boom nav a:hover{
+    transform: scale(1.1);
+    background-color:blueviolet;
+}
+
+.other-content-left p{
+  color: #f9f9f9;
+}
