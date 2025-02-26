@@ -2,6 +2,232 @@ html{
     padding: 0;
     margin: 0;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #e0e8ff 0%, #f5f0ff 50%, #e6f0ff 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  /* Login container */
+  .login-container {
+    width: 100%;
+    max-width: 420px;
+  }
+  
+  /* Login card */
+  .login-card {
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header section */
+  .login-header {
+    background: linear-gradient(to right, #4776e6, #5e60ce);
+    padding: 2rem;
+    text-align: center;
+    color: white;
+  }
+  
+  .avatar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .user-icon {
+    color: white;
+  }
+  
+  .login-header h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .login-header p {
+    opacity: 0.9;
+    font-size: 0.9rem;
+  }
+  
+  /* Form section */
+  .login-form {
+    padding: 2rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4b5563;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input-with-icon {
+    position: relative;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+  }
+  
+  .input-with-icon input {
+    width: 100%;
+    padding: 0.75rem 0.75rem 0.75rem 2.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    transition: all 0.2s;
+    outline: none;
+  }
+  
+  .input-with-icon input:focus {
+    border-color: #4776e6;
+    box-shadow: 0 0 0 3px rgba(71, 118, 230, 0.2);
+  }
+  
+  /* Remember me and forgot password */
+  .form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .remember-me {
+    display: flex;
+    align-items: center;
+  }
+  
+  .remember-me input {
+    margin-right: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    accent-color: #4776e6;
+  }
+  
+  .remember-me label {
+    font-size: 0.875rem;
+    color: #4b5563;
+  }
+  
+  .forgot-password {
+    font-size: 0.875rem;
+    color: #4776e6;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  /* Login button */
+  .login-button {
+    width: 100%;
+    padding: 0.75rem;
+    background: linear-gradient(to right, #4776e6, #5e60ce);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-button:hover {
+    background: linear-gradient(to right, #3a67d7, #5152bf);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Divider */
+  .divider {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: "";
+    flex: 1;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .divider span {
+    padding: 0 1rem;
+    color: #9ca3af;
+    font-size: 0.875rem;
+  }
+  
+  /* Social login */
+  .social-login {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .social-button {
+    padding: 0.75rem;
+    background-color: white;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4b5563;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .social-button:hover {
+    background-color: #f9fafb;
+  }
+  
+  /* Sign up link */
+  .signup-link {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #4b5563;
+  }
+  
+  .signup-link a {
+    color: #4776e6;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  .footer {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #6b7280;
+  }
 body{
     height: 100%;
     padding: 0%;
