@@ -1,6 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 /* Base styles */
 html, body {
@@ -87,7 +84,7 @@ nav a:hover {
 
 /* Home Section */
 #home {
-  min-height: 70vh;
+  height: 70vh;
   display: flex;
   padding-top: 100px;
 }
@@ -95,9 +92,9 @@ nav a:hover {
 .grid-container {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 60px;
+  gap: 20px;
   width: 100%;
-  max-width: 1200px;
+  
   margin: 0 auto;
 }
 
@@ -127,7 +124,7 @@ nav a:hover {
   font-family: 'Britannic', serif;
   color: aliceblue;
   font-size: 40px;
-  padding-left: 50px;
+  padding-left: px;
 }
 
 .me {
